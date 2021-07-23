@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscripts.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR START-->
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">DHIMANT<span>.resume</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#teams" class="menu-btn">Teams</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVIGATION BAR END-->
+
+    <section>
+      <img src="Images/bg.jpg" id="bg" />
+      <img src="Images/moon.png" id="moon" />
+      <img src="Images/mountain.png" id="mountain" />
+      <img src="Images/road.png" id="road" />
+      <h2 id="text">Hey there!</h2>
+    </section>
+
+    <div class="sec">
+      <h2>Made this as a demo.</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure velit eos
+        veniam nihil dolorum maxime, labore placeat maiores quasi, iste
+        aspernatur laboriosam, quas perspiciatis laudantium? Recusandae
+        explicabo nam quas ipsam error ratione? Sed, illo suscipit. Numquam
+        atque reiciendis dolorem qui accusantium. Adipisci excepturi cum sed? Ex
+        aliquam, in a est repellendus omnis aliquid beatae? Dolorem ducimus quo
+        maiores explicabo rerum nostrum atque ratione laboriosam, obcaecati
+        magnam inventore numquam dicta distinctio animi! Laborum consequatur
+        esse enim distinctio alias quibusdam error, in modi nam odit magnam
+        recusandae maiores? Nam quasi, ea illo consequuntur laborum, dicta
+        laboriosam aut modi unde animi quis vitae.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        road.style.top = value * 0.15 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
